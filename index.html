@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Amulya G</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="h-nav">
+      <div class="logo">Amulya</div>
+      <div class="h-menu">
+        <div class="h-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()"></a>Skills</li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/pics.jpg" alt="Amulya profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Amulya</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/AMULYA.docx.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/amulya-gajarla/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/AmulyaGajarla'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech Bachelor Of Technology</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello! I'm Amulya, a creative and detail-oriented web developer. From a young age, I've been captivated by the digital world, and that fascination has blossomed into a rewarding career in web development.<br>I hold a Bachelor's degree in Computer Science from RGUKT, where I had the privilege of delving deep into the world of algorithms and programming languages. My formal education provided me with a strong foundation, but it's the hands-on experience and continuous learning that truly fuel my passion.
+            </p>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+    <section id="skills" class="skills-container">
+    
+        <!-- Skills section content -->
+
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+        <ul class="skills-list">
+          <li>
+            <img src="./assets/cp.png" alt="C" />
+            <span>C</span>
+          </li>
+          <li>
+            <img src="./assets/java.png" alt="Java" />
+            <span>Java</span>
+          </li>
+          <li>
+            <img src="./assets/my.png" alt="MySql" />
+            <span>MySql</span>
+          </li>
+          <li>
+            <img src="./assets/js.png" alt="js" />
+            <span>Javascript</span>
+          </li>
+          <li>
+            <img src="./assets/html.png" alt="HTML5" />
+            <span>HTML5</span>
+          </li>
+          <li>
+            <img src="./assets/css-3.png" alt="CSS3" />
+            <span>CSS3</span>
+          </li>
+          <li>
+            <img src="./assets/php.png" alt="php" />
+            <span>Php</span>
+          </li>
+          <li>
+            <img src="./assets/git.png" alt="git" />
+            <span>Git</span>
+          </li>
+        </ul>
+      </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="projet-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills project-title">Amazon Clone</h2>
+            <p>This project focus on replicating the visual
+style and layout of theAmazon website.Worked on layout design, navigation menus,
+image display, and linking between different
+pages.This gave me beautiful experience.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AmulyaGajarla/Amazon-Clone'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://admirable-florentine-0a4360.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills project-title">My Portfolio</h2>
+           <p>This portfolio project is a digital mirror which
+is reflecting my skills and creativity.
+The profile section introduces me as a protag-
+onist, and as visitors scroll through the sec-
+tions, they are immersed in my journey, skills,
+and projects.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AmulyaGajarla/MyPortFolio'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://lively-torte-b9c801.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project3 .jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">WomenCell-WebSite</h2>
+           <p>Women’s Cell of RGUKT-B serves as a virtual
+hub where students can access information
+about workshops, seminars, and events.
+Focuses on women’s empowerment, skill de-
+velopment, personal growth and professional
+growth.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AmulyaGajarla/WomenCell-WebSite'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/AmulyaGajarla/WomenCell-WebSite'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+      
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/amulya-gajarla/">LinkedIn</a></p>
+        </div>
+        
+        </div>
+      </div>
+      <span class="phone-icon">
+        <i class="bx bx-phone"></i>
+        +91-86883 41400
+        <i class="fa-regular fa-envelope-open"></i>amulya.sadanand@gmail.com
+      </span>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Designed by Amulya</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
